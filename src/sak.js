@@ -8,7 +8,7 @@ async function sak(id_telegram, nip, pass, wfo_lat, wfo_long, wfh_lat, wfh_long)
     if ((jam < 6) || (jam >= 9 && jam < 14)) {
         bot.sendMessage(id_telegram, "memulai pengisian sak...");
     
-        const browser = await puppeteer.launch({ headless: true, args: ["--no-sandbox"] });
+        const browser = await puppeteer.launch({ headless: true, args: ["--no-sandbox"], ignoreDefaultArgs: ['--disable-extensions'] });
 
         const page = await browser.newPage();
 

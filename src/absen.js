@@ -12,7 +12,7 @@ async function absen(id_telegram, nip, pass, wfo_lat, wfo_long, wfh_lat, wfh_lon
     if (jam >= 6) {
         bot.sendMessage(id_telegram, "memulai pengisian absen...");
         
-        const browser = await puppeteer.launch({ headless: true, args: ["--no-sandbox"] });
+        const browser = await puppeteer.launch({ headless: true, args: ["--no-sandbox"], ignoreDefaultArgs: ['--disable-extensions'] });
 
         const page = await browser.newPage();
 
