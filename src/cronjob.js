@@ -17,7 +17,7 @@ function cronjob() {
         });
 
         // Absen Pagi
-        cron.schedule('33 6 * * 1,2,3,4,5', () => {
+        cron.schedule('23 6 * * 1,2,3,4,5', () => {
             autoabsen(); 
         }, {
             scheduled: true,

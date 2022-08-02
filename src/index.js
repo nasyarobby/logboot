@@ -1,8 +1,8 @@
-// const { chatbot } = require("./chatbot");
-// const { cronjob } = require("./cronjob");
+const { chatbot } = require("./chatbot");
+const { cronjob } = require("./cronjob");
 
-// chatbot();
-// cronjob();
+chatbot();
+cronjob();
 
-const { autoabsen } = require("./autoabsen");
-autoabsen();
+// const { autoabsen } = require("./autoabsen");
+// autoabsen();
