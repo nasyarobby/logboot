@@ -11,8 +11,6 @@ function range_date(stringDate){
         if( between.length > 1) {
             let openTime = dayjs(between[0], 'DD/MM/YYYY');
             let closeTime = dayjs(between[1], 'DD/MM/YYYY');
-            console.log(openTime.format('DD/MM/YYYY'));
-            console.log(closeTime.format('DD/MM/YYYY'));
             let currentDate = openTime;
             let arrTime = [];
             while (currentDate.isBefore(closeTime) || currentDate.isSame(closeTime)) {
